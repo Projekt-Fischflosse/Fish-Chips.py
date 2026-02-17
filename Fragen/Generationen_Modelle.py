@@ -5,7 +5,7 @@ from datetime import datetime
 conn = sqlite3.connect('fish_and_chips.db')
 cursor = conn.cursor()
 
-#egemen erstellt jetzt eine Tabelle für die ersten 10 Fragen
+#egemen erstellt jetzt eine Tabelle für die ersten 10 Fragen höhö
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS questions (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -49,3 +49,4 @@ conn.commit()
 conn.close()
 
 print(f"🐟🍟 {len(fragen)} Fragen hinzugefügt!")
+
